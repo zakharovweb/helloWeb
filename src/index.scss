@@ -13,20 +13,46 @@ $image_dir: 'images/';
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   @include background-image('bg-welcome.jpg');
-  h3 {
+  h2 {
     color: #FFF;
+  }
+  input {
+    width: 250px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 0px;
+    background: none;
+    color: #FFF;
+    padding: 0 0 0 15px;
+  }
+  button {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 0px;
+    background: #FFF;
+  }
+  .row {
+    margin: 0 0 3px 0;
   }
 }
 
-.secondary-page {
+.top {
+  position: fixed;
+  top: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  h3 {
-    color: #222;
-  } 
+  justify-content: space-between; 
+  border-bottom: 1px solid #FFF;
+  padding: 0 15px;
+  background: #035aa1;
+  z-index: 100;
+  span {
+    color: #FFF;
+  }
 }
 
