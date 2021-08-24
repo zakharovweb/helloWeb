@@ -1,0 +1,32 @@
+$image_dir: 'images/';
+
+@mixin background-image($image) {
+  background: url($image_dir + $image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.first-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include background-image('bg-welcome.jpg');
+  h3 {
+    color: #FFF;
+  }
+}
+
+.secondary-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    color: #222;
+  } 
+}
+
